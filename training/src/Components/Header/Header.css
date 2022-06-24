@@ -1,0 +1,31 @@
+.Head {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 700px;
+    background-image: url(./img/header_img.jpeg);
+    
+}
+
+.title {
+
+    width: 40%;
+    height: 40%;
+    padding-top: 2%;
+    margin: auto;
+}
+
+.btn-warning {
+    margin: auto;
+}
+
+h1 {
+    margin-right: 0px 0px 0px;
+    color: white;
+    font-size: 500%;
+    Font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif.
+}
+
+h2 {
+    color: grey;
+    font-size: 200%;
+}

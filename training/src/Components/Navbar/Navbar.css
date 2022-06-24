@@ -1,0 +1,12 @@
+.Navbar {
+
+    text-decoration: none;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.nav_link {
+    text-decoration: none;
+    margin-right: 50px;
+    color: gray;
+}
