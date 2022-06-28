@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import './Header.css';
+
 
 function Header() {
 
@@ -8,9 +10,11 @@ function Header() {
             <div className="row Head">
                 
                 <div className="title">
-                    <h1>My Coach</h1>
+                    <h1>John Coaching</h1>
                     <h2>Ton coach sportif en ligne</h2>
-                    <button type="button" className="btn btn-warning">Commencer</button>
+                    <Link to="/Mon Espace}">
+                        <button type="button" className="btn btn-warning">Commencer</button>
+                    </Link>
                 </div>
 
 

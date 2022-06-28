@@ -8,24 +8,30 @@
 
 .title {
 
-    width: 40%;
+    width: 50%;
     height: 40%;
     padding-top: 2%;
-    margin: auto;
+    margin-top: 1%;
+    margin-left: 25%;
 }
 
 .btn-warning {
-    margin: auto;
+    text-align: center;
+    margin-left: 38%;
+    margin-top: 4%;
 }
 
 h1 {
-    margin-right: 0px 0px 0px;
+    text-align: center;
+    margin:auto;
     color: white;
-    font-size: 500%;
-    Font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif.
+    font-size: 400%;
+    Font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
 }
 
 h2 {
+    text-align: center;
     color: grey;
     font-size: 200%;
+    margin: auto;
 }
