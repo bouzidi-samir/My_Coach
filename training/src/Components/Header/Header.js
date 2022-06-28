@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
+
 import './Header.css';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 
 function Header() {
@@ -12,7 +13,7 @@ function Header() {
                 <div className="title">
                     <h1>John Coaching</h1>
                     <h2>Ton coach sportif en ligne</h2>
-                    <Link to="/Mon Espace}">
+                    <Link to="/Espace"> 
                         <button type="button" className="btn btn-warning">Commencer</button>
                     </Link>
                 </div>

@@ -1,4 +1,6 @@
 import './Navbar.css';
+import Header from '../Header/Header';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function Navbar() {
     return (
@@ -20,14 +22,14 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="toggleMobileMenu">
                     <ul className="navbar-nav ms-auto text-center"> 
                         <li>
-                            <a className="nav_link" href="#"> 
+                            <Link className="nav_link" to="/"> 
                                 Accueil 
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className="nav_link" href="#" > 
-                                Nos Services 
-                            </a>
+                            <Link className="nav_link" to="/Espace"> 
+                                Mon Espace 
+                            </Link>
                         </li>
                         <li>
                             <a className="nav_link" href="#"> 
@@ -40,7 +42,10 @@ function Navbar() {
                             </a>
                         </li>
                     </ul>
+                   
+                
                 </div>
+                 
                 </nav>
             </div>
         </div>
