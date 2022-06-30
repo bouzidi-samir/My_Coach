@@ -10,13 +10,9 @@ class Exercice {
     }
 };
 
+const ercicesList = [
+    new Exercice("Devellopé Couché", "Pectoraux", "Moyen", "..."),
+    new Exercice("Squat", "Jambes", "Moyen", "...")
+];
 
-
-
-
-
-const Exercices = {
-
-
-
-}
+export default Exercice;

@@ -6,6 +6,7 @@ import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Header from './Components/Header/Header';
 import Dashboard from './Components/Dashboard/Dashboard';
+import Trainings from './Components/Dashboard/Trainings/Trainings';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Header/>} />
           <Route path="/Espace" element={<Dashboard/>} />
+          <Route path="/Trainings" element={<Trainings/>} />
         </Routes>
       </div>
     </BrowserRouter>
