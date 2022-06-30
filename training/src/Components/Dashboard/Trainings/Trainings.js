@@ -20,16 +20,18 @@ function Trainings() {
         setTrainings(trainingList);
     }, []);
 
-    function fillAddWindow() {
-        if (!addWindow)
-            setaddWindow(true);
-        else    
-            setaddWindow(false);
-    }
-
     function addTraining() {
         let newtrainings = [...trainings];
         newtrainings.push(new Training("New"));
+        setTrainings(newtrainings);
+    }
+
+    function clearTraining(n) {
+        let newtrainings = [...trainings];
+        for (let i = 0; i < newtrainings.length; i++) {
+            if (newtrainings[i].name == n)
+                delete newtrainings[i];
+        }
         setTrainings(newtrainings);
     }
 
@@ -41,8 +43,8 @@ function Trainings() {
                     {trainings.map(({name, grade}) => (
                         <div className='training' key={name}>
                             <img src={haltere}></img>
+                            <button onClick={clearTraining} type="button" className="btn btn-warning sup">Supprimer</button>
                             <p>{name}</p>
-                            {addWindow ? <p>test</p> : null}
                         </div>
                     ))}
                 </div>
