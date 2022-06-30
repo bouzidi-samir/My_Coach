@@ -1,28 +1,28 @@
-import './Trainings.css'
-import Training from '../../../Datas/TrainingList';
+import './TrainingList.css'
+import TrainingClass from '../../../Datas/TrainingClass';
+import Training from './Training/Training';
 import React, {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import haltere from './haltere.jpeg';
 
 var d = [];
 
-var trainingList = [ 
-    new Training ('Pectoraux'),
-    new Training ('Jambes')];
+var trainList = [ 
+    new TrainingClass ('Pectoraux'),
+    new TrainingClass ('Jambes')];
 
 
 
-function Trainings() {
+function TrainingList() {
     const [trainings, setTrainings] = useState(new Array);
     const [addWindow, setaddWindow] = useState(false);
 
     useEffect( () => {
-        setTrainings(trainingList);
+        setTrainings(trainList);
     }, []);
 
     function addTraining() {
         let newtrainings = [...trainings];
-        newtrainings.push(new Training("New"));
+        newtrainings.push(new TrainingClass("New"));
         setTrainings(newtrainings);
     }
 
@@ -40,16 +40,12 @@ function Trainings() {
             <h1>Mes Trainings</h1>
             <button onClick={addTraining} type="button" className="btn btn-warning add"> + Ajouter</button>
                 <div className='list'>
-                    {trainings.map(({name, grade}) => (
-                        <div className='training' key={name}>
-                            <img src={haltere}></img>
-                            <button onClick={clearTraining} type="button" className="btn btn-warning sup">Supprimer</button>
-                            <p>{name}</p>
-                        </div>
+                    {trainings.map(training => (
+                        <Training key={training.name} training={training} />         
                     ))}
                 </div>
         </div>
     );
 }
 
-export default Trainings;
+export default TrainingList;
