@@ -10,6 +10,7 @@ function Dashboard() {
     return (
         <div className='content'>
             <h1>Bienvenue Champion!</h1>
+            <hr></hr>
                 <div className='base'>
                     <div className='Programmes'> 
                         <Link to={'/Trainings'}>

@@ -12,6 +12,7 @@ function Header() {
                 
                 <div className="title">
                     <h1>John Coaching</h1>
+                    <hr></hr>
                     <h2>Ton coach sportif en ligne</h2>
                     <Link to="/Espace"> 
                         <button type="button" className="btn btn-warning">Commencer</button>

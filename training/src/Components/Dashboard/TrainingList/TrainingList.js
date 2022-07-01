@@ -22,16 +22,7 @@ function TrainingList() {
 
     function addTraining() {
         let newtrainings = [...trainings];
-        newtrainings.push(new TrainingClass("New"));
-        setTrainings(newtrainings);
-    }
-
-    function clearTraining(n) {
-        let newtrainings = [...trainings];
-        for (let i = 0; i < newtrainings.length; i++) {
-            if (newtrainings[i].name == n)
-                delete newtrainings[i];
-        }
+        newtrainings.push(new TrainingClass("New" + newtrainings.length));
         setTrainings(newtrainings);
     }
 
@@ -39,9 +30,10 @@ function TrainingList() {
         <div className='Traincontent'>
             <h1>Mes Trainings</h1>
             <button onClick={addTraining} type="button" className="btn btn-warning add"> + Ajouter</button>
+            <hr></hr>
                 <div className='list'>
                     {trainings.map(training => (
-                        <Training key={training.name} training={training} />         
+                        <Training key={training.name} training={training} list={trainings} setList={setTrainings}/>         
                     ))}
                 </div>
         </div>
