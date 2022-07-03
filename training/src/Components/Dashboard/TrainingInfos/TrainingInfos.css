@@ -1,0 +1,32 @@
+.traininginfos {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 700px;
+    background-image: url(../../../img/crossmen.jpeg)
+}
+
+.traininginfos h1 {
+    margin-bottom: 0%;
+
+}
+
+.exercices h2 {
+    text-align: center;
+    color: white;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+}
+
+.general {
+    width: 30%;
+    height: 30%;
+}
+
+.exercices {
+    width: 50%;
+    margin-left: 10%;
+
+}

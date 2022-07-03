@@ -12,7 +12,9 @@ class Exercice {
 
 const ercicesList = [
     new Exercice("Devellopé Couché", "Pectoraux", "Moyen", "..."),
-    new Exercice("Squat", "Jambes", "Moyen", "...")
+    new Exercice("Devellopé Incliné", "Pectoraux", "Moyen", "..."),
+    new Exercice("Tractions", "Dos", "Moyen", "..."),
+    new Exercice("Squat", "Jambes", "Moyen", "..."),
 ];
 
 export default Exercice;

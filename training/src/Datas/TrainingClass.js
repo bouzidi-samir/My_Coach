@@ -1,6 +1,6 @@
 import Exercice from "./Exercices";
 
-class Training {
+class TrainingClass {
 
     constructor (name) {
         this.name = name;
@@ -8,8 +8,8 @@ class Training {
     };
 };
 
-class List {
-    Training = new Training;
-};
+var trainList = [ 
+    new TrainingClass ('Pectoraux'),
+    new TrainingClass ('Jambes')];
 
-export default Training;
+export default TrainingClass;
