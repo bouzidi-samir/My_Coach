@@ -15,7 +15,7 @@ function Header() {
                     <hr></hr>
                     <h2>Ton coach sportif en ligne</h2>
                     <Link to="/Espace"> 
-                        <button type="button" className="btn btn-warning">Commencer</button>
+                        <button type="button" className="btn btn-primary">Commencer</button>
                     </Link>
                 </div>
 

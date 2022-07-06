@@ -19,6 +19,11 @@ h1 {
     margin-bottom: 5%;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 .Programmes h2 {
     font-size: 300%;
     color: black;
@@ -29,6 +34,7 @@ h1 {
     font-size: 300%;
     color: black;
     background-color: white;
+    text-decoration: none;
 }
 
 img {
@@ -60,4 +66,77 @@ img {
     width: 32%;
     height: 37%;
     border-radius: 3%;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .content {
+        background-size: 100% 100%;
+        width: 100%;
+        height: 700px;
+        background-image: url(../../img/crossmen.jpeg)
+    }
+    
+    .base {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 700px;
+    }
+    
+    h1 {
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    
+    .Programmes h2 {
+        font-size: 300%;
+        color: black;
+        background-color: white;
+    }
+    
+    .Infos h2 {
+        font-size: 300%;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+    }
+    
+    img {
+        margin-left: 0% ;
+        width: 100%;
+        height: 100%;
+        border-radius: 3%;
+    }
+    
+    .Programmes {
+        width: 70%;
+        height: 25%;
+        border-radius: 3%;
+    }
+    
+    .Programmes:hover {
+        width: 32%;
+        height: 37%;
+        border-radius: 3%;
+    }
+    
+    .Infos {
+        width: 70%;
+        height: 25%;
+        border-radius: 3%;
+    }
+    
+    .Infos:hover {
+        width: 32%;
+        height: 37%;
+        border-radius: 3%;
+    }
 }

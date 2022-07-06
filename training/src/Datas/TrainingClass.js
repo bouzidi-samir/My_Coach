@@ -4,12 +4,12 @@ class TrainingClass {
 
     constructor (name) {
         this.name = name;
-        var step = [{}];        
+        this.exercices  = [];        
     };
+    
+    addExercice(e) {
+        this.exercices.push(e);
+    }
 };
-
-var trainList = [ 
-    new TrainingClass ('Pectoraux'),
-    new TrainingClass ('Jambes')];
 
 export default TrainingClass;

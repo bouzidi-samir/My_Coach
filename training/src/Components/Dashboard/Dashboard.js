@@ -4,6 +4,8 @@ import React, {useState} from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import womenbar from './womenbar.jpeg';
 import nutrition from '../../img/nutrition.jpeg'
+import {Provider} from 'react-redux'
+import {store} from '../../redux.js'
 
 function Dashboard() {
 

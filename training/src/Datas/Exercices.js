@@ -10,11 +10,15 @@ class Exercice {
     }
 };
 
-const ercicesList = [
-    new Exercice("Devellopé Couché", "Pectoraux", "Moyen", "..."),
-    new Exercice("Devellopé Incliné", "Pectoraux", "Moyen", "..."),
-    new Exercice("Tractions", "Dos", "Moyen", "..."),
-    new Exercice("Squat", "Jambes", "Moyen", "..."),
-];
+    const devCouche = new Exercice("Devellopé Couché", "Pectoraux", "Moyen", "...");
+    const devIncline = new Exercice("Devellopé Incliné", "Pectoraux", "Moyen", "...");
+    const ecartePoulie = new Exercice("Ecarté Poulie", "Pectoraux", "Moyen", "...");
+    
+    const tractions = new Exercice("Tractions", "Dos", "Moyen", "...");
+    const squat= new Exercice("Squat", "Jambes", "Moyen", "...");
+
+    export const exercicesList = {
+    devCouche, devIncline, squat, ecartePoulie 
+};
 
 export default Exercice;

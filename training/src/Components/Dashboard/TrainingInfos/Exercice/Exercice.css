@@ -1,0 +1,14 @@
+.expart {
+    display: flex;
+    margin-top: 2%;
+}
+
+.vignette {
+    width: 20%;
+    height: 20%;
+}
+
+p {
+    font-size: 90%;
+    text-align: center;
+}

@@ -8,9 +8,13 @@ import Header from './Components/Header/Header';
 import Dashboard from './Components/Dashboard/Dashboard';
 import TrainingList from './Components/Dashboard/TrainingList/TrainingList';
 import TrainingInfos from './Components/Dashboard/TrainingInfos/TrainingInfos';
+import { Provider } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import {store} from "./redux"
 
 function App() {
   return (
+    //Provider indque que j'utilise un state-manager.
     <BrowserRouter>
       <div className="App">
         <Navbar></Navbar>    
