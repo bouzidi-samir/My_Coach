@@ -1,0 +1,47 @@
+p {
+    font-size: 120%;
+    color: white;
+    border: solid white 1px;
+}
+
+.excontent {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 700px;
+}
+
+.excontent .exelement {
+
+    width: 20%;
+    height: 25%;
+    margin-left: 2%;
+    margin-bottom: 9%;
+    border: solid white 1px;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .excontent .exelement {
+
+        width: 40%;
+        height: 35%;
+        margin-left: 2%;
+        margin-bottom: 9%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    .excontent .exelement {
+
+        width: 90%;
+        height: 35%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 30%;
+    }
+
+}

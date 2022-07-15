@@ -10,7 +10,7 @@ function Navbar() {
                     <a href="#" class="navbar-brand">
                     </a>
                 <button 
-                    class="navbar-toggler" 
+                    className="navbar-toggler" 
                     type="button" 
                     data-bs-toggle="collapse"
                     data-bs-target="#toggleMobileMenu"

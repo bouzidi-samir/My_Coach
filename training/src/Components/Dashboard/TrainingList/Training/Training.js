@@ -16,7 +16,9 @@ function Training(props) {
 
     return (
         <div className='training'>
-            <img src={haltere}></img>
+             <Link to={"/Trainings/" + props.training.name }>  
+                <img src={haltere}></img>
+            </Link>
             <Link to={"/Trainings/" + props.training.name }>    
                 <button type="button" className="btn btn-primary btn-lg sup">Modifier</button>
             </Link>

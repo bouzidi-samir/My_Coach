@@ -8,22 +8,46 @@ import Header from './Components/Header/Header';
 import Dashboard from './Components/Dashboard/Dashboard';
 import TrainingList from './Components/Dashboard/TrainingList/TrainingList';
 import TrainingInfos from './Components/Dashboard/TrainingInfos/TrainingInfos';
+import TrainForm from './Components/Dashboard/TrainingList/TrainForm/TrainForm';
 import { Provider } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import {store} from "./redux"
+import {store} from "./redux";
+import ExerciceList from './Components/Dashboard/ExerciceList/ExerciceList'
 
+var List = []; 
+
+function getExercices(data) {
+   //console.log(data); 
+   List =  data;
+} 
+
+function getDatas() {
+
+    const url = "https://bridge.buddyweb.fr/api/pumpitapp/exercices";
+
+    fetch(url).then((response) => 
+        response.json().then((data) => (getExercices(List = [...data])
+        )));
+}
+getDatas();
 function App() {
+  
+  getDatas();
+  
   return (
     //Provider indque que j'utilise un state-manager.
     <BrowserRouter>
       <div className="App">
         <Navbar></Navbar>    
-        <Routes>
-          <Route path="/" element={<Header/>} />
-          <Route path="/Espace" element={<Dashboard/>} />
-          <Route path="/Trainings" element={<TrainingList/>} />
-          <Route path="/Trainings/:name" element={<TrainingInfos/>} />
-        </Routes>
+          <hr></hr>
+          <Routes>
+            <Route path="/" element={<Header/>} />
+            <Route path="/Espace" element={<Dashboard/>} />
+            <Route path="/Trainings" element={<TrainingList/>} />
+            <Route path="/Exercices" element={<ExerciceList exlist={List} />} />
+            <Route path="/Trainings/:name" element={<TrainingInfos/>} />
+            <Route path="/Trainings/Ajout" element={<TrainForm/>} />
+          </Routes>
       </div>
     </BrowserRouter>
   );

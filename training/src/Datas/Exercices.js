@@ -1,4 +1,20 @@
 
+var exercices;
+
+export function getExercices(data) {
+    return data;
+} 
+
+export function getDatas() {
+
+    const url = "https://bridge.buddyweb.fr/api/pumpitapp/exercices";
+
+    fetch(url).then((response) => 
+        response.json().then((data) => (getExercices(data)
+        )));
+    
+}
+
 class Exercice {
 
     constructor(name, zone, grade, imgPath) {
