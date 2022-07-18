@@ -13,6 +13,7 @@ import { Provider } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import {store} from "./redux";
 import ExerciceList from './Components/Dashboard/ExerciceList/ExerciceList'
+import ExerciceInfo from './Components/Dashboard/ExerciceList/ExerciceInfo/ExerciceInfo';
 
 var List = []; 
 
@@ -39,13 +40,13 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar></Navbar>    
-          <hr></hr>
           <Routes>
             <Route path="/" element={<Header/>} />
             <Route path="/Espace" element={<Dashboard/>} />
             <Route path="/Trainings" element={<TrainingList/>} />
-            <Route path="/Exercices" element={<ExerciceList exlist={List} />} />
+            <Route path="/Exercices" element={<ExerciceList/>} />
             <Route path="/Trainings/:name" element={<TrainingInfos/>} />
+            <Route path="/Exercices/:id" element={<ExerciceInfo/>} />
             <Route path="/Trainings/Ajout" element={<TrainForm/>} />
           </Routes>
       </div>

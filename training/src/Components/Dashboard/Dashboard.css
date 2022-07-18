@@ -2,21 +2,25 @@
     background-size: 100% 100%;
     width: 100%;
     height: 700px;
-    background-image: url(../../img/crossmen.jpeg)
+    background-image: url(../../img/dash.jpeg);
+    padding-top: 10%;
 }
 
 .base {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
     background-size: 100% 100%;
     width: 100%;
     height: 700px;
 }
 
-h1 {
+.content h1 {
     margin-top: 0%;
     margin-bottom: 5%;
+    color: black;
 }
 
 a {
@@ -25,16 +29,16 @@ a {
 
 
 .Programmes h2 {
-    font-size: 300%;
-    color: black;
-    background-color: white;
+    font-size: 250%;
+    color: white;
+    margin-top: 0%;
 }
 
 .Infos h2 {
-    font-size: 300%;
-    color: black;
-    background-color: white;
+    font-size: 250%;
+    color: white;
     text-decoration: none;
+    margin-top: 0%;
 }
 
 img {
@@ -45,28 +49,44 @@ img {
 }
 
 .Programmes {
-    width: 30%;
+    background-color: violet;
+    opacity: 70%;
+    background-size: 100% 100%;
+    width: 25%;
     height: 35%;
-    border-radius: 3%;
+    border: solid white 2px;
+    border-radius: 10%;
+    padding-top: 2%;
 }
 
 .Programmes:hover {
-    width: 32%;
-    height: 37%;
-    border-radius: 3%;
+    
+    border: solid blue;
 }
 
 .Infos {
-    width: 30%;
+    background-color: darksalmon;
+    opacity: 70%;
+    background-size: 100% 100%;
+    width: 25%;
     height: 35%;
-    border-radius: 3%;
+    border: solid white 2px;
+    border-radius: 10%;
+    padding-top: 2%;
 }
 
 .Infos:hover {
-    width: 32%;
-    height: 37%;
-    border-radius: 3%;
+    
+    border: solid blue;
 }
+
+.icone {
+    display: block;
+    height: 40%;
+    width: 40%;
+    margin: auto;
+}
+
 
 @media only screen and (max-width: 414px) {
 
@@ -121,22 +141,11 @@ img {
         height: 25%;
         border-radius: 3%;
     }
-    
-    .Programmes:hover {
-        width: 32%;
-        height: 37%;
-        border-radius: 3%;
-    }
-    
+       
     .Infos {
         width: 70%;
         height: 25%;
         border-radius: 3%;
     }
     
-    .Infos:hover {
-        width: 32%;
-        height: 37%;
-        border-radius: 3%;
-    }
 }

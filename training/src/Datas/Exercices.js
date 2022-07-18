@@ -15,6 +15,7 @@ export function getDatas() {
     
 }
 
+
 class Exercice {
 
     constructor(name, zone, grade, imgPath) {

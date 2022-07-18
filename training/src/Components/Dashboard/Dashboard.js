@@ -6,24 +6,28 @@ import womenbar from './womenbar.jpeg';
 import nutrition from '../../img/nutrition.jpeg'
 import {Provider} from 'react-redux'
 import {store} from '../../redux.js'
+import iconeHalt from './haltericone.png'
+import prog from './plan.png'
 
 function Dashboard() {
 
     return (
         <div className='content'>
-            <h1>Bienvenue Champion!</h1>
-            <hr></hr>
+       
                 <div className='base'>
-                    <div className='Programmes'> 
+                    <div className='Programmes'>
                         <Link to={'/Trainings'}>
-                            <img src={womenbar}></img>                 
-                            <h2>Trainings</h2>
+                    <img className='icone' src={prog}></img>
+                    <h2>Programmes</h2> 
+
                         </Link>
                     </div>
                     <div className='Infos'>
-                        <Link to={'/'}>
-                            <img src={nutrition}></img>                 
-                            <h2>Nutition</h2>
+                        <Link to={'/Exercices'}>
+                        <img className='icone' src={iconeHalt}></img>
+                    <h2>Exercices</h2> 
+                                          
+                      
                         </Link>
                     </div>
                 </div>

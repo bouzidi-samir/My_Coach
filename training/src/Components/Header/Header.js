@@ -7,8 +7,8 @@ function Header() {
 
     return (
         
-        <div className="container-fluid">
-            <div className="row Head">
+        <div>
+            <div className="Head">
                 
                 <div className="title">
                     <h1>John Coaching</h1>
@@ -18,8 +18,9 @@ function Header() {
                         <button type="button" className="btn btn-primary">Commencer</button>
                     </Link>
                 </div>
+                <div className="headimg">
 
-
+                </div>
 
             </div>
         </div>
