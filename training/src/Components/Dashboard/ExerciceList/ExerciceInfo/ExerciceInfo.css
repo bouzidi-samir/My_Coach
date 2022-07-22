@@ -25,14 +25,14 @@
 .formad {
     width: 400px;
     height: 400px;
-    background-color: gray;
-    opacity: 80%;
+    background-color: white;
+    opacity: 90%;
     border-radius: 10%;
     position: absolute;
 }
 
 label {
-    color: white;
+    color: black;
     text-align: center;
     margin: auto;
 }

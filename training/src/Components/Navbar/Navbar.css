@@ -15,3 +15,13 @@
     color: gray;
 }
 
+@media only screen and (max-width: 991px) {
+    .Navbar {
+        height: 60px;
+    }
+
+    .nav_link {
+        margin: auto;
+    }
+    
+}

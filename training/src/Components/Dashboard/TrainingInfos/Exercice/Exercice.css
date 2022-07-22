@@ -4,9 +4,16 @@
 }
 
 .vignette {
-    width: 20%;
+    width: 30%;
     height: 20%;
+    border: solid;
 }
+
+.vignette h3 {
+    font-size: 100%;
+    text-align: center;
+}
+
 
 p {
     font-size: 90%;

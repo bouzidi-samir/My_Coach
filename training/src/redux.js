@@ -11,7 +11,7 @@ const trainingSlice = createSlice({
         //Dispactch des taches:        
         addTraining: (state, action) => {
             //action.tyoe: "trainings/addTraining, action.payload: nom du taining"
-            state.push(new TrainingClass(action.payload));
+            state.push(new TrainingClass(action.payload, []));
         },
         deleteTraining: (state, action) => {
             //console.log(state);

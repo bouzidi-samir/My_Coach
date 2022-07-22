@@ -1,15 +1,19 @@
-p {
+.exelement p {
     font-size: 120%;
-    color: white;
+    background-color: white;
+    color: violet;
     border: solid white 1px;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
 }
 
 .excontent {
-    margin-top: 3%;
+    padding-top: 3%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    background-color:steelblue;
     height: 700px;
 }
 
@@ -20,6 +24,7 @@ p {
     margin-left: 2%;
     margin-bottom: 9%;
     border: solid white 1px;
+    border-radius: 80%;
 }
 
 @media only screen and (max-width: 992px) {

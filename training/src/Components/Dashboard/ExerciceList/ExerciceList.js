@@ -25,10 +25,7 @@ function ExerciceList(props) {
     let url  = "https://pixabay.com/fr/photos/homme-personne-puissance-force-1282232/";
     return (
         <>
-        <h2>Selectionner votre exercice</h2>
-        <hr></hr>
         <div className="excontent">
-                
             {               
                 list.map(e => ( 
                 

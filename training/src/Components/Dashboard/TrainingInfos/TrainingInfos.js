@@ -17,18 +17,19 @@ function TrainingInfos() {
         
     return (
         <div className='traininginfos'>
-                <hr></hr>
                 <div className='cont'>
                     <div className='general'>
                         <img src={haltere}></img>                    
                         <h1>{name}</h1>
+                        <p>Durée du training:</p>
+                        <p>Muscles Ciblés:</p>
                     </div>
                 <div className='exercices'>
                     <h2>Exercices</h2> 
                     <div className='exercicelist'>
                         {exercices.map( e => 
                         <div className='exelement'>
-                            <Exercice key={e.name} exercice={e}/>
+                            <Exercice key={e.nom_exercice} exercice={e}/>
                         </div>    
                         )} 
                         <Link to="/Exercices"> 

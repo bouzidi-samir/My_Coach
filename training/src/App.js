@@ -30,11 +30,9 @@ function getDatas() {
         response.json().then((data) => (getExercices(List = [...data])
         )));
 }
-getDatas();
+
 function App() {
-  
-  getDatas();
-  
+    
   return (
     //Provider indque que j'utilise un state-manager.
     <BrowserRouter>

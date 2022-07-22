@@ -1,15 +1,20 @@
 import React, {useState, useEffect} from 'react'
+import TrainingClass from '../../../../Datas/TrainingClass';
 import { useParams } from 'react-router';
 import { useSelector } from "react-redux";
 import {useDispatch} from 'react-redux'
 import './ExerciceInfo.css'
+import { Link } from 'react-router-dom';
 
 export default function ExerciceInfo() {
 
     const [exercice, setExercice] = useState({});
     const [formadd, setFormadd] = useState(false);
+    const [selected, setSelected] = useState("ll");
     const {id} = useParams();
     const trainL = useSelector((state) => state.trainings);
+    const trainingstate = useSelector((state) => state.trainings); 
+    const dispatch = useDispatch();
    
     useEffect( () => {
     
@@ -22,11 +27,15 @@ export default function ExerciceInfo() {
 
     }, []);
 
-    function displayFormadd () {
+    function handleSelected(event) {
 
-        setFormadd(true);
-        console.log(trainL);
+        setSelected(event.target.value);
+    }
 
+    function submitForm(event) {
+
+        const training = trainL.filter( (e) => e.name == selected);
+        training[0].exercices.push(exercice);
     }
 
     return (
@@ -42,14 +51,14 @@ export default function ExerciceInfo() {
                     <h2>Description:</h2>
                     <hr></hr>
                     <p>{exercice.description_exercice}</p>
-                    <button onClick={displayFormadd} className='btn btn-primary'>Ajouter à un training</button>
+                    <button onClick={() => setFormadd(true)} className='btn btn-primary'>Ajouter à un training</button>
                 </div>
                 {formadd ?
                     
                     <form className='formad'>
                         <label>Selectionne ton training:</label>
                         <br></br>
-                        <select>
+                        <select value={selected} onChange={handleSelected}>
                             <option value="">--Mes Trainings--</option>
                             {
                             trainL.map(training => {
@@ -61,7 +70,9 @@ export default function ExerciceInfo() {
 
                         </select>
                             <br></br>
-                            <button className='btn btn-primary'>Ajouter</button>
+                            <Link to="/Trainings">
+                            <button onClick={(event)=> submitForm(event)} className='btn btn-primary'>Ajouter</button>
+                            </Link>
                     </form>
                 : null}
             </div>

@@ -18,12 +18,8 @@ export function getDatas() {
 
 class Exercice {
 
-    constructor(name, zone, grade, imgPath) {
+    constructor() {
 
-        this.name = name;
-        this.zone = zone;
-        this.grade = grade;
-        this.imgPath = imgPath;
     }
 };
 

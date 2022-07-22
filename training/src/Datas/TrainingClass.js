@@ -2,9 +2,10 @@ import Exercice from "./Exercices";
 
 class TrainingClass {
 
-    constructor (name) {
+    constructor (name, ex) {
         this.name = name;
-        this.exercices  = [];        
+        this.exercices  = ex;
+        this.muscles = [];        
     };
     
     addExercice(e) {
