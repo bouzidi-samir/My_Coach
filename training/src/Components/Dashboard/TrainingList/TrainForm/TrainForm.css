@@ -3,32 +3,52 @@
     background-size: 100% 100%;
     width: 100%;
     height: 700px;
-    background-image: url(../../../../img/crossmen.jpeg)
+    background-image: url(../../../../img/dash.jpeg);
 }
 
 .formT {
-    width: 80%;
-    height: 60%;
+    width: 65%;
+    min-height: 60%;
     padding: 2%;
-    margin-right: 10%;
-    margin-left: 10%; 
-    background-color: black;
-    opacity: 90%;
+    margin: auto;
+    background-color: gainsboro;
+    opacity: 80%;
     text-align: center;
     display: flex;
+    flex-direction: column;
+    border-radius: 4%;
     justify-content: space-around;
 }
 
 label {
     color: white;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    margin-left: 100%;
     font-size: 120%;
 }
 
 .picture {
 
     width: 30%;
-    height: 50%;
+    height: 40%;
+    margin: auto;
+    
+}
 
+input {
+    margin-bottom: 4%;
+    width: 70%;
+    height: 40px;
+    border: 0ch;
+    border-radius: 3%;
+    text-align: center;
+}
+
+.buton-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.return {
+    margin-bottom: 3%;
 }

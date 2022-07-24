@@ -27,13 +27,29 @@
     height: 400px;
     background-color: white;
     opacity: 90%;
+    border: solid blue 2px;
     border-radius: 10%;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
 }
 
 label {
     color: black;
     text-align: center;
     margin: auto;
+}
+
+select {
+    width: 60%;
+    height: 10%;
+    background-color: thistle;
+    margin: auto;
+    border-radius: 10%;
+}
+
+option {
+    text-align: center;
 }
 

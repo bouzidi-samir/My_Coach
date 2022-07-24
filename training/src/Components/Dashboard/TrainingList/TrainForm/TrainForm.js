@@ -41,9 +41,14 @@ export default function TrainForm() {
                     <br></br>
                     <input name="trainingTime" id="trainingTime"></input>
                     <br></br>
-                    <Link to={"/Trainings"}>
-                        <button onClick={handleForm} className="btn btn-primary">Enregistrer</button>
-                    </Link>
+                    <div className="buton-field">
+                        <Link to={"/Trainings"}>
+                            <button onClick={handleForm} className="btn btn-primary">Ajouter</button>
+                        </Link>
+                   
+                            <button className="btn btn-primary return">Retour</button>
+                     
+                    </div>
                 </form>
             </div>
         </div>

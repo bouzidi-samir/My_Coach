@@ -11,6 +11,7 @@ export default function ExerciceInfo() {
     const [exercice, setExercice] = useState({});
     const [formadd, setFormadd] = useState(false);
     const [selected, setSelected] = useState("ll");
+    const [nbSeries, setNbSeries] = useState(0);
     const {id} = useParams();
     const trainL = useSelector((state) => state.trainings);
     const trainingstate = useSelector((state) => state.trainings); 
@@ -32,10 +33,15 @@ export default function ExerciceInfo() {
         setSelected(event.target.value);
     }
 
+    function handleNbSeries(event) {
+        setNbSeries(event.target.value);
+    }
+
     function submitForm(event) {
 
         const training = trainL.filter( (e) => e.name == selected);
-        training[0].exercices.push(exercice);
+        training[0].exercices.push({exercice: exercice, serie: nbSeries});
+        training[0].muscles.push(exercice.muscle_cible_exercice);
     }
 
     return (
@@ -67,9 +73,17 @@ export default function ExerciceInfo() {
                                 )
                             }
                             )}
-
                         </select>
-                            <br></br>
+                        <br></br>
+                        <label>Nombre de series:</label>
+                        <select value={nbSeries} onChange={handleNbSeries}>
+                            <option >1</option>
+                            <option >2 </option>
+                            <option >3</option>
+                            <option >4</option>
+                            <option >5</option>
+                        </select>
+                        <br></br>
                             <Link to="/Trainings">
                             <button onClick={(event)=> submitForm(event)} className='btn btn-primary'>Ajouter</button>
                             </Link>

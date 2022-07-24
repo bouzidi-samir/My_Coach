@@ -28,9 +28,11 @@ function TrainingInfos() {
                     <h2>Exercices</h2> 
                     <div className='exercicelist'>
                         {exercices.map( e => 
-                        <div className='exelement'>
-                            <Exercice key={e.nom_exercice} exercice={e}/>
-                        </div>    
+                            <>
+                            <div className='exelement'>
+                                <Exercice key={e.nom_exercice} exercice={e} serie={e + 1}/>
+                            </div>    
+                            </>
                         )} 
                         <Link to="/Exercices"> 
                             <button className='btn btn-primary'>Ajouter</button>                   

@@ -1,6 +1,7 @@
 .expart {
     display: flex;
     margin-top: 2%;
+    justify-content: space-around;
 }
 
 .vignette {
@@ -15,7 +16,7 @@
 }
 
 
-p {
+.series p {
     font-size: 90%;
     text-align: center;
 }
